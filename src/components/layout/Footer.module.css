@@ -1,0 +1,34 @@
+.footer{
+    background-color: #44834b;
+    color: #fff;
+    padding: 3em;
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.redes li {
+    margin: 0 1em;
+}
+
+.redes li:hover{
+    color: rgb(43, 109, 89);
+}
+
+.redes svg{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.copy_right{
+    margin-top: 2rem;
+}
+
+.copy_right span{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}

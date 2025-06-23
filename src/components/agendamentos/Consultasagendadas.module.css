@@ -1,0 +1,66 @@
+.dashboard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  
+}
+
+
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.card strong {
+  color: #111;
+}
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.editButton, .deleteButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  color: #111;
+  font-size: 0.9rem;
+}
+.editButton:hover {
+  background-color: #30931e;
+  font-weight: bold;
+}
+
+.deleteButton:hover {
+font-weight: bold;
+
+  background-color: #ff0a1f;
+}
