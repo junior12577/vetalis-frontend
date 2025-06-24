@@ -23,7 +23,7 @@ function EditarConsulta() {
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://localhost:5000/agendamento/${id}`)
+      axios.get(`https://vetalis-backend.onrender.com/agendamento/${id}`)
         .then(res => setForm(res.data))
         .catch(err => console.error('Erro ao buscar consulta:', err));
     }
@@ -35,7 +35,7 @@ function EditarConsulta() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:5000/agendamento/${id}`, form)
+    axios.put(`https://vetalis-backend.onrender.com/agendamento/${id}`, form)
       .then(() => {
         alert('Consulta atualizada com sucesso!');
         navigate('/consultas');

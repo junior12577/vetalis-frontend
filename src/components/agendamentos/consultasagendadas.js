@@ -9,7 +9,7 @@ function ConsultasDashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/consultas')
+    axios.get('https://vetalis-backend.onrender.com/consultas')
       .then(res => setConsultas(res.data))
       .catch(err => console.error('Erro ao buscar consultas:', err));
   }, []);
@@ -22,7 +22,7 @@ function ConsultasDashboard() {
   return data.toLocaleDateString('pt-BR');
 };
   useEffect(() => {
-    axios.get('http://localhost:5000/agendamento') 
+    axios.get('https://vetalis-backend.onrender.com/agendamento') 
       .then(res => setConsultas(res.data))
       .catch(err => console.error('Erro ao buscar consultas:', err));
   }, []);
@@ -34,7 +34,7 @@ function ConsultasDashboard() {
 
   const excluirConsulta = (id) => {
     // Exemplo simples
-    axios.delete(`http://localhost:5000/agendamento/${id}`)
+    axios.delete(`https://vetalis-backend.onrender.com/agendamento/${id}`)
       .then(() => {
         setConsultas(consultas.filter(item => item._id !== id));
       })

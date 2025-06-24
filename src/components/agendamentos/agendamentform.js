@@ -133,7 +133,7 @@ function formatarTelefone(value) {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/agendamento', dados);
+      const response = await axios.post('https://vetalis-backend.onrender.com/agendamento', dados);
 
       await MySwal.fire({
         icon: 'success',

@@ -12,7 +12,7 @@ function DetalhesConsulta() {
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://localhost:5000/agendamento/${id}`)
+      axios.get(`https://vetalis-backend.onrender.com/agendamento/${id}`)
         .then(res => setConsulta(res.data))
         .catch(err => console.error('Erro ao buscar detalhes:', err));
     }

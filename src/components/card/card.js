@@ -8,7 +8,7 @@ function ConsultaCard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/agendamento') 
+    axios.get('https://vetalis-backend.onrender.com/agendamento') 
       .then(res => setConsultas(res.data))
       .catch(err => console.error('Erro ao buscar consultas:', err));
   }, []);
@@ -20,7 +20,7 @@ function ConsultaCard() {
 
   const excluirConsulta = (id) => {
  
-    axios.delete(`http://localhost:5000/agendamento/${id}`)
+    axios.delete(`https://vetalis-backend.onrender.com/agendamento/${id}`)
       .then(() => {
         setConsultas(consultas.filter(item => item._id !== id));
       })
