@@ -4,7 +4,7 @@ import Container from './Container';
 import Logo from  '../../assents/img/logo_clinica.png';
 
 function Navbar () {
-  const navigate = useNavigate();
+ 
 
   const handleLogout = () => {
     localStorage.removeItem('token');

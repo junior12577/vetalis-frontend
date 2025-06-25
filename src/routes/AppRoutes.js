@@ -1,8 +1,7 @@
 
-import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Agendamento from '../pages/agendconsul'
 import Consultas from '../pages/consultas'
-import Container from '../components/layout/Container';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import DetalhesConsulta from '../components/agendamentos/DetalhesConsulta';
