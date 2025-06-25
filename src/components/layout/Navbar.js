@@ -1,7 +1,7 @@
 import styles from './Navbar.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Container from './Container';
-import Logo from '../../img/logo_clinica.png';
+import Logo from  '../../assents/img/logo_clinica.png';
 
 function Navbar () {
   const navigate = useNavigate();
