@@ -1,0 +1,18 @@
+# Ignorar dependências (não versionar)
+node_modules/
+
+# Ignorar build gerado
+build/
+
+# Ignorar arquivos de log
+npm-debug.log*
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar configs do editor
+.vscode/
+
+# Ignorar configs locais do Vercel
+.vercel/
